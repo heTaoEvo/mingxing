@@ -10,7 +10,7 @@
         <!--Me Table View Controller-->
         <scene sceneID="Q9x-UW-SzG">
             <objects>
-                <tableViewController id="vTX-As-Jut" customClass="YLMeTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="me" id="vTX-As-Jut" customClass="YLMeTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0oG-zo-TTr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

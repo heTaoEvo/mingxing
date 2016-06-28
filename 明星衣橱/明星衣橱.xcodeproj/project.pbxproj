@@ -11,6 +11,15 @@
 		011893301D1CCBD800896164 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 011893161D1CCBD800896164 /* main.m */; };
 		011893311D1CCBD800896164 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0118931A1D1CCBD800896164 /* ViewController.m */; };
 		011893351D1CCE2A00896164 /* YLMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011893331D1CCE2A00896164 /* YLMeTableViewController.m */; };
+		01CC11EF1D22A9D9007D9488 /* YLMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC11ED1D22A9D9007D9488 /* YLMatchViewController.m */; };
+		01CC11F01D22A9D9007D9488 /* YLMatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CC11EE1D22A9D9007D9488 /* YLMatchViewController.xib */; };
+		01CC11F41D22A9FD007D9488 /* YLMatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC11F31D22A9FD007D9488 /* YLMatchModel.m */; };
+		01CC11FA1D22AA04007D9488 /* YLWaterFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC11F71D22AA04007D9488 /* YLWaterFlowCell.m */; };
+		01CC11FB1D22AA04007D9488 /* YLWaterFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC11F91D22AA04007D9488 /* YLWaterFlowView.m */; };
+		01CC11FD1D22AA2B007D9488 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC11FC1D22AA2B007D9488 /* Foundation+Log.m */; };
+		01CC12031D22AA37007D9488 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC12001D22AA37007D9488 /* UIImage+WebP.m */; };
+		01CC12041D22AA37007D9488 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01CC12011D22AA37007D9488 /* WebP.framework */; };
+		01CC12051D22AA37007D9488 /* YL.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CC12021D22AA37007D9488 /* YL.storyboard */; };
 		6082571C6F7951FBD27E2379 /* libPods-明星衣橱.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B90B9EC175F98C834D9056 /* libPods-明星衣橱.a */; };
 		F30F8D3A1D1CC6FB0028D1D4 /* LXY.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30F8D381D1CC6FB0028D1D4 /* LXY.storyboard */; };
 		F30F8D3C1D1CC6FB0028D1D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30F8D3B1D1CC6FB0028D1D4 /* Assets.xcassets */; };
@@ -36,6 +45,21 @@
 		0118931A1D1CCBD800896164 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		011893321D1CCE2A00896164 /* YLMeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMeTableViewController.h; sourceTree = "<group>"; };
 		011893331D1CCE2A00896164 /* YLMeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMeTableViewController.m; sourceTree = "<group>"; };
+		01CC11EC1D22A9D9007D9488 /* YLMatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMatchViewController.h; sourceTree = "<group>"; };
+		01CC11ED1D22A9D9007D9488 /* YLMatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMatchViewController.m; sourceTree = "<group>"; };
+		01CC11EE1D22A9D9007D9488 /* YLMatchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLMatchViewController.xib; sourceTree = "<group>"; };
+		01CC11F21D22A9FD007D9488 /* YLMatchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMatchModel.h; sourceTree = "<group>"; };
+		01CC11F31D22A9FD007D9488 /* YLMatchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMatchModel.m; sourceTree = "<group>"; };
+		01CC11F61D22AA04007D9488 /* YLWaterFlowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWaterFlowCell.h; sourceTree = "<group>"; };
+		01CC11F71D22AA04007D9488 /* YLWaterFlowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWaterFlowCell.m; sourceTree = "<group>"; };
+		01CC11F81D22AA04007D9488 /* YLWaterFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWaterFlowView.h; sourceTree = "<group>"; };
+		01CC11F91D22AA04007D9488 /* YLWaterFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWaterFlowView.m; sourceTree = "<group>"; };
+		01CC11FC1D22AA2B007D9488 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		01CC11FE1D22AA37007D9488 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		01CC11FF1D22AA37007D9488 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		01CC12001D22AA37007D9488 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		01CC12011D22AA37007D9488 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
+		01CC12021D22AA37007D9488 /* YL.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YL.storyboard; sourceTree = "<group>"; };
 		2ED200F278F3E241139725CA /* Pods-明星衣橱.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-明星衣橱.release.xcconfig"; path = "Pods/Target Support Files/Pods-明星衣橱/Pods-明星衣橱.release.xcconfig"; sourceTree = "<group>"; };
 		36B90B9EC175F98C834D9056 /* libPods-明星衣橱.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-明星衣橱.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2C5F88E58EEFD7A640D4B1 /* Pods-明星衣橱.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-明星衣橱.debug.xcconfig"; path = "Pods/Target Support Files/Pods-明星衣橱/Pods-明星衣橱.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01CC12041D22AA37007D9488 /* WebP.framework in Frameworks */,
 				6082571C6F7951FBD27E2379 /* libPods-明星衣橱.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,32 +202,11 @@
 		0118931F1D1CCBD800896164 /* 搭配-Match */ = {
 			isa = PBXGroup;
 			children = (
-				011893201D1CCBD800896164 /* Controller */,
-				011893211D1CCBD800896164 /* Model */,
-				011893221D1CCBD800896164 /* View */,
+				01CC11F51D22AA04007D9488 /* View */,
+				01CC11F11D22A9FD007D9488 /* Model */,
+				01CC11EB1D22A9D9007D9488 /* Controller */,
 			);
 			path = "搭配-Match";
-			sourceTree = "<group>";
-		};
-		011893201D1CCBD800896164 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		011893211D1CCBD800896164 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		011893221D1CCBD800896164 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		011893231D1CCBD800896164 /* 社区-Community */ = {
@@ -298,6 +302,36 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		01CC11EB1D22A9D9007D9488 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01CC11EC1D22A9D9007D9488 /* YLMatchViewController.h */,
+				01CC11ED1D22A9D9007D9488 /* YLMatchViewController.m */,
+				01CC11EE1D22A9D9007D9488 /* YLMatchViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		01CC11F11D22A9FD007D9488 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01CC11F21D22A9FD007D9488 /* YLMatchModel.h */,
+				01CC11F31D22A9FD007D9488 /* YLMatchModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01CC11F51D22AA04007D9488 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01CC11F61D22AA04007D9488 /* YLWaterFlowCell.h */,
+				01CC11F71D22AA04007D9488 /* YLWaterFlowCell.m */,
+				01CC11F81D22AA04007D9488 /* YLWaterFlowView.h */,
+				01CC11F91D22AA04007D9488 /* YLWaterFlowView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		52337A858D57D0FD6CBD45EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +379,12 @@
 		F30F8D2F1D1CC6FB0028D1D4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				01CC11FE1D22AA37007D9488 /* PrefixHeader.pch */,
+				01CC11FF1D22AA37007D9488 /* UIImage+WebP.h */,
+				01CC12001D22AA37007D9488 /* UIImage+WebP.m */,
+				01CC12011D22AA37007D9488 /* WebP.framework */,
+				01CC12021D22AA37007D9488 /* YL.storyboard */,
+				01CC11FC1D22AA2B007D9488 /* Foundation+Log.m */,
 				011893161D1CCBD800896164 /* main.m */,
 				F30F8D381D1CC6FB0028D1D4 /* LXY.storyboard */,
 				F30F8D3D1D1CC6FB0028D1D4 /* LaunchScreen.storyboard */,
@@ -452,6 +492,8 @@
 				F30F8D3F1D1CC6FB0028D1D4 /* LaunchScreen.storyboard in Resources */,
 				F30F8D3C1D1CC6FB0028D1D4 /* Assets.xcassets in Resources */,
 				F30F8D3A1D1CC6FB0028D1D4 /* LXY.storyboard in Resources */,
+				01CC12051D22AA37007D9488 /* YL.storyboard in Resources */,
+				01CC11F01D22A9D9007D9488 /* YLMatchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,17 +555,23 @@
 				F310DDD61D22662500317917 /* LXYShangPing.m in Sources */,
 				0118932F1D1CCBD800896164 /* AppDelegate.m in Sources */,
 				F310DDD01D22160C00317917 /* LXYScrollBtn.m in Sources */,
+				01CC11EF1D22A9D9007D9488 /* YLMatchViewController.m in Sources */,
+				01CC12031D22AA37007D9488 /* UIImage+WebP.m in Sources */,
+				01CC11FA1D22AA04007D9488 /* YLWaterFlowCell.m in Sources */,
 				F3B73DA31D20DB6600B519AD /* LXYShouYeCollectionView.m in Sources */,
 				F30F8D521D1CD37C0028D1D4 /* LXYTabBarViewController.m in Sources */,
 				F30F8D571D1D13770028D1D4 /* LXYshouYeNaviBarButton.m in Sources */,
 				F316B6C81D20BB000014BACD /* YLImgButton.m in Sources */,
 				F30F8D5A1D1D2EEA0028D1D4 /* LXYShouYeViewController.m in Sources */,
 				011893301D1CCBD800896164 /* main.m in Sources */,
+				01CC11FD1D22AA2B007D9488 /* Foundation+Log.m in Sources */,
+				01CC11F41D22A9FD007D9488 /* YLMatchModel.m in Sources */,
 				F30F8D5F1D1F6BFF0028D1D4 /* LXYshouYeScrollTableViewCell.m in Sources */,
 				F310DDCD1D21720D00317917 /* LXYShouYePic.m in Sources */,
 				F310DDC71D21249900317917 /* LXYPingPai.m in Sources */,
 				F3B73D9E1D20CBF100B519AD /* LXYcollectionTableViewCell.m in Sources */,
 				011893351D1CCE2A00896164 /* YLMeTableViewController.m in Sources */,
+				01CC11FB1D22AA04007D9488 /* YLWaterFlowView.m in Sources */,
 				011893311D1CCBD800896164 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,7 +683,12 @@
 			baseConfigurationReference = 6F2C5F88E58EEFD7A640D4B1 /* Pods-明星衣橱.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/明星衣橱",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "明星衣橱/PrefixHeader.pch";
 				INFOPLIST_FILE = "明星衣橱/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BNR.----";
@@ -648,7 +701,12 @@
 			baseConfigurationReference = 2ED200F278F3E241139725CA /* Pods-明星衣橱.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/明星衣橱",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "明星衣橱/PrefixHeader.pch";
 				INFOPLIST_FILE = "明星衣橱/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BNR.----";

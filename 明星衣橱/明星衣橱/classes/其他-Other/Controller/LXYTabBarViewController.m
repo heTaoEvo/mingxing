@@ -9,6 +9,8 @@
 #import "LXYTabBarViewController.h"
 #import "LXYshouYeNaviBarButton.h"
 #import "LXYShouYeViewController.h"
+#import "YLMatchViewController.h"
+#import "YLMeTableViewController.h"
 @interface LXYTabBarViewController ()
 
 @end
@@ -53,7 +55,7 @@
     
 
     //搭配视图控制器
-    UINavigationController *dapeiNavigationController = [[UINavigationController alloc]init];
+    UINavigationController *dapeiNavigationController = [[UINavigationController alloc] initWithRootViewController:[[YLMatchViewController alloc] init]];
     //社区视图控制器
     UINavigationController *bbsNavigationController = [[UINavigationController alloc]init];
     
@@ -64,7 +66,10 @@
     shoppingNavigationController.navigationBarHidden=NO;
     [shoppingNavigationController pushViewController:denglu animated:YES];
     //个人视图控制
-    UINavigationController *likeNavigationController = [[UINavigationController alloc]init];
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"YL" bundle:nil];
+    YLMeTableViewController *me = [story instantiateViewControllerWithIdentifier:@"me"];
+    UINavigationController *likeNavigationController = [[UINavigationController alloc] initWithRootViewController:me];
+    
     
     
    self.viewControllers=@[homeNavigationController,dapeiNavigationController,bbsNavigationController,shoppingNavigationController,likeNavigationController];
