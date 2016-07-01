@@ -39,7 +39,7 @@
                                                     <rect key="frame" x="0.0" y="266" width="600" height="115"/>
                                                     <animations/>
                                                 </scrollView>
-                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="JxB-FB-bsQ">
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="JxB-FB-bsQ">
                                                     <rect key="frame" x="0.0" y="76" width="600" height="93"/>
                                                     <animations/>
                                                 </scrollView>
@@ -239,6 +239,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2P-ZX-8FH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-184" y="-5084"/>
+        </scene>
+        <!--Shang Ping Xiang Qing View Controller-->
+        <scene sceneID="WUZ-t2-KMK">
+            <objects>
+                <viewController storyboardIdentifier="xiangqing" id="2B0-Ln-jue" customClass="LXYShangPingXiangQingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zzL-1m-phU"/>
+                        <viewControllerLayoutGuide type="bottom" id="9sZ-7s-Vzx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GD3-al-gDG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Agm-A5-QYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="-5086"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ZCW-Mu-2mN">

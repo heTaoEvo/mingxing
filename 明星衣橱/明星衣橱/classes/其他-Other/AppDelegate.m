@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LXYTabBarViewController.h"
+#import "LXYShouYeViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,6 +21,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     LXYTabBarViewController *tabBarController = [[LXYTabBarViewController alloc]init];
+ 
     self.window.rootViewController = tabBarController;
     
     

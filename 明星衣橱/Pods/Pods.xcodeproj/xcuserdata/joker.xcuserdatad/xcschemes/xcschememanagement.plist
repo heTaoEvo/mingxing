@@ -14,12 +14,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-明星衣橱.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>SDAutoLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDCycleScrollView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,17 +52,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1703F2D0464461510D7ADD540A8A97E3</key>
+		<key>1B69DF5E8146E2BE3D3F185E8E923DF1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7AEC8A812B3CB197830AA4D189A62630</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>901450611EAF5BEC327C143FD3439B2E</key>
+		<key>70BC44266C6FFE30D2C57129458E070B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +67,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C94AA497C7755FF729D3D610BFB15412</key>
+		<key>A2C23ACFE9AABA97FD9910D36F9E3772</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4FECC005940AF12A9B96DCB4D4E916B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CEC61152958B639034C533710CEB1ADB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC57A2C632A2EB488237084619BCAA35</key>
 		<dict>
 			<key>primary</key>
 			<true/>

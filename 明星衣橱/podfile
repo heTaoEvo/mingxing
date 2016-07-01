@@ -8,10 +8,11 @@ target '明星衣橱' do
 	pod 'JSONModel'	
 	pod 'SDWebImage', '~>3.8'	
 	pod 'YYModel'
-	 pod 'SDAutoLayout', '~> 2.1.2'
-     pod 'Masonry'
-     pod 'MJExtension'
-     pod 'MJRefresh'
+	pod 'SDAutoLayout', '~> 2.1.2'
+     	pod 'Masonry'
+     	pod 'MJExtension'
+     	pod 'MJRefresh'
+	pod 'SDCycleScrollView','~> 1.64'
   # Pods for 明星衣橱
 
 end

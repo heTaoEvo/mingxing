@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <UIView+SDAutoLayout.h>
+#import "LXYXdata.h"
 @interface LXYScrollBtn : UIButton
 @property (nonatomic ,strong) UILabel *oldPrice,*Price;
 @property (nonatomic ,copy) NSString *oldPrice1,*Price1;
-
+@property (nonatomic ,strong) NSMutableDictionary *Xdata;
 @end
