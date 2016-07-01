@@ -9,6 +9,8 @@ target '明星衣橱' do
 	pod 'SDWebImage', '~>3.8'	
 	pod 'YYModel'
 	 pod 'SDAutoLayout', '~> 2.1.2'
+	pod 'SDCycleScrollView','~> 1.64'
+	pod 'MJRefresh'
   # Pods for 明星衣橱
 
 end

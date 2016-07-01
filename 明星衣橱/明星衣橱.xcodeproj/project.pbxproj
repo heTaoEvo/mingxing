@@ -23,7 +23,16 @@
 		F310DDCD1D21720D00317917 /* LXYShouYePic.m in Sources */ = {isa = PBXBuildFile; fileRef = F310DDCC1D21720D00317917 /* LXYShouYePic.m */; };
 		F310DDD01D22160C00317917 /* LXYScrollBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = F310DDCF1D22160C00317917 /* LXYScrollBtn.m */; };
 		F310DDD61D22662500317917 /* LXYShangPing.m in Sources */ = {isa = PBXBuildFile; fileRef = F310DDD51D22662500317917 /* LXYShangPing.m */; };
+		F3149D411D235D73001B191C /* LXYfenlei.m in Sources */ = {isa = PBXBuildFile; fileRef = F3149D401D235D73001B191C /* LXYfenlei.m */; };
+		F3149D441D23A2D6001B191C /* LXYShangPingXiangQingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3149D431D23A2D6001B191C /* LXYShangPingXiangQingViewController.m */; };
+		F3149D471D23AAAB001B191C /* LXYXdata.m in Sources */ = {isa = PBXBuildFile; fileRef = F3149D461D23AAAB001B191C /* LXYXdata.m */; };
 		F316B6C81D20BB000014BACD /* YLImgButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F316B6C71D20BB000014BACD /* YLImgButton.m */; };
+		F35404221D2500F8003910A9 /* LoadMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = F35404201D2500F8003910A9 /* LoadMoreView.m */; };
+		F35404231D2500F8003910A9 /* LoadMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F35404211D2500F8003910A9 /* LoadMoreView.xib */; };
+		F35405131D2606F1003910A9 /* ZYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F35405121D2606F1003910A9 /* ZYScrollView.m */; };
+		F35405191D265439003910A9 /* LXYDaoJiShi.m in Sources */ = {isa = PBXBuildFile; fileRef = F35405181D265439003910A9 /* LXYDaoJiShi.m */; };
+		F354051B1D2654BB003910A9 /* LXYDaoJiShi.xib in Resources */ = {isa = PBXBuildFile; fileRef = F354051A1D2654BB003910A9 /* LXYDaoJiShi.xib */; };
+		F354051D1D26550F003910A9 /* wKgBf1d0h-mAD5UJAAEkHX6fjt0633.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F354051C1D26550F003910A9 /* wKgBf1d0h-mAD5UJAAEkHX6fjt0633.jpg */; };
 		F3B73D9E1D20CBF100B519AD /* LXYcollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B73D9D1D20CBF100B519AD /* LXYcollectionTableViewCell.m */; };
 		F3B73DA31D20DB6600B519AD /* LXYShouYeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B73DA21D20DB6600B519AD /* LXYShouYeCollectionView.m */; };
 /* End PBXBuildFile section */
@@ -60,8 +69,25 @@
 		F310DDCF1D22160C00317917 /* LXYScrollBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYScrollBtn.m; sourceTree = "<group>"; };
 		F310DDD41D22662500317917 /* LXYShangPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYShangPing.h; sourceTree = "<group>"; };
 		F310DDD51D22662500317917 /* LXYShangPing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYShangPing.m; sourceTree = "<group>"; };
+		F3149D3F1D235D73001B191C /* LXYfenlei.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYfenlei.h; sourceTree = "<group>"; };
+		F3149D401D235D73001B191C /* LXYfenlei.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYfenlei.m; sourceTree = "<group>"; };
+		F3149D421D23A2D6001B191C /* LXYShangPingXiangQingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYShangPingXiangQingViewController.h; sourceTree = "<group>"; };
+		F3149D431D23A2D6001B191C /* LXYShangPingXiangQingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYShangPingXiangQingViewController.m; sourceTree = "<group>"; };
+		F3149D451D23AAAB001B191C /* LXYXdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYXdata.h; sourceTree = "<group>"; };
+		F3149D461D23AAAB001B191C /* LXYXdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYXdata.m; sourceTree = "<group>"; };
+		F3149D481D23BA74001B191C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F316B6C61D20BB000014BACD /* YLImgButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLImgButton.h; sourceTree = "<group>"; };
 		F316B6C71D20BB000014BACD /* YLImgButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLImgButton.m; sourceTree = "<group>"; };
+		F354041F1D2500F8003910A9 /* LoadMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreView.h; sourceTree = "<group>"; };
+		F35404201D2500F8003910A9 /* LoadMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreView.m; sourceTree = "<group>"; };
+		F35404211D2500F8003910A9 /* LoadMoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadMoreView.xib; sourceTree = "<group>"; };
+		F354050A1D253502003910A9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		F35405111D2606F1003910A9 /* ZYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYScrollView.h; sourceTree = "<group>"; };
+		F35405121D2606F1003910A9 /* ZYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYScrollView.m; sourceTree = "<group>"; };
+		F35405171D265439003910A9 /* LXYDaoJiShi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYDaoJiShi.h; sourceTree = "<group>"; };
+		F35405181D265439003910A9 /* LXYDaoJiShi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYDaoJiShi.m; sourceTree = "<group>"; };
+		F354051A1D2654BB003910A9 /* LXYDaoJiShi.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXYDaoJiShi.xib; sourceTree = "<group>"; };
+		F354051C1D26550F003910A9 /* wKgBf1d0h-mAD5UJAAEkHX6fjt0633.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wKgBf1d0h-mAD5UJAAEkHX6fjt0633.jpg"; sourceTree = "<group>"; };
 		F3B73D9C1D20CBF100B519AD /* LXYcollectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYcollectionTableViewCell.h; sourceTree = "<group>"; };
 		F3B73D9D1D20CBF100B519AD /* LXYcollectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYcollectionTableViewCell.m; sourceTree = "<group>"; };
 		F3B73DA11D20DB6600B519AD /* LXYShouYeCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYShouYeCollectionView.h; sourceTree = "<group>"; };
@@ -125,6 +151,10 @@
 				F310DDC61D21249900317917 /* LXYPingPai.m */,
 				F310DDD41D22662500317917 /* LXYShangPing.h */,
 				F310DDD51D22662500317917 /* LXYShangPing.m */,
+				F3149D3F1D235D73001B191C /* LXYfenlei.h */,
+				F3149D401D235D73001B191C /* LXYfenlei.m */,
+				F3149D451D23AAAB001B191C /* LXYXdata.h */,
+				F3149D461D23AAAB001B191C /* LXYXdata.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,6 +310,8 @@
 		0118932C1D1CCBD800896164 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F3149D421D23A2D6001B191C /* LXYShangPingXiangQingViewController.h */,
+				F3149D431D23A2D6001B191C /* LXYShangPingXiangQingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -294,6 +326,15 @@
 		0118932E1D1CCBD800896164 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F35405111D2606F1003910A9 /* ZYScrollView.h */,
+				F35405121D2606F1003910A9 /* ZYScrollView.m */,
+				F354041F1D2500F8003910A9 /* LoadMoreView.h */,
+				F35404201D2500F8003910A9 /* LoadMoreView.m */,
+				F35404211D2500F8003910A9 /* LoadMoreView.xib */,
+				F35405171D265439003910A9 /* LXYDaoJiShi.h */,
+				F35405181D265439003910A9 /* LXYDaoJiShi.m */,
+				F354051A1D2654BB003910A9 /* LXYDaoJiShi.xib */,
+				F354051C1D26550F003910A9 /* wKgBf1d0h-mAD5UJAAEkHX6fjt0633.jpg */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -301,6 +342,7 @@
 		52337A858D57D0FD6CBD45EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F354050A1D253502003910A9 /* Accelerate.framework */,
 				36B90B9EC175F98C834D9056 /* libPods-明星衣橱.a */,
 			);
 			name = Frameworks;
@@ -350,6 +392,7 @@
 				F30F8D3D1D1CC6FB0028D1D4 /* LaunchScreen.storyboard */,
 				F30F8D3B1D1CC6FB0028D1D4 /* Assets.xcassets */,
 				F30F8D401D1CC6FB0028D1D4 /* Info.plist */,
+				F3149D481D23BA74001B191C /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -449,9 +492,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F354051D1D26550F003910A9 /* wKgBf1d0h-mAD5UJAAEkHX6fjt0633.jpg in Resources */,
 				F30F8D3F1D1CC6FB0028D1D4 /* LaunchScreen.storyboard in Resources */,
 				F30F8D3C1D1CC6FB0028D1D4 /* Assets.xcassets in Resources */,
 				F30F8D3A1D1CC6FB0028D1D4 /* LXY.storyboard in Resources */,
+				F354051B1D2654BB003910A9 /* LXYDaoJiShi.xib in Resources */,
+				F35404231D2500F8003910A9 /* LoadMoreView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,11 +557,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F310DDD61D22662500317917 /* LXYShangPing.m in Sources */,
+				F35404221D2500F8003910A9 /* LoadMoreView.m in Sources */,
 				0118932F1D1CCBD800896164 /* AppDelegate.m in Sources */,
+				F3149D441D23A2D6001B191C /* LXYShangPingXiangQingViewController.m in Sources */,
 				F310DDD01D22160C00317917 /* LXYScrollBtn.m in Sources */,
+				F3149D471D23AAAB001B191C /* LXYXdata.m in Sources */,
 				F3B73DA31D20DB6600B519AD /* LXYShouYeCollectionView.m in Sources */,
 				F30F8D521D1CD37C0028D1D4 /* LXYTabBarViewController.m in Sources */,
 				F30F8D571D1D13770028D1D4 /* LXYshouYeNaviBarButton.m in Sources */,
+				F3149D411D235D73001B191C /* LXYfenlei.m in Sources */,
+				F35405191D265439003910A9 /* LXYDaoJiShi.m in Sources */,
 				F316B6C81D20BB000014BACD /* YLImgButton.m in Sources */,
 				F30F8D5A1D1D2EEA0028D1D4 /* LXYShouYeViewController.m in Sources */,
 				011893301D1CCBD800896164 /* main.m in Sources */,
@@ -524,6 +575,7 @@
 				F310DDC71D21249900317917 /* LXYPingPai.m in Sources */,
 				F3B73D9E1D20CBF100B519AD /* LXYcollectionTableViewCell.m in Sources */,
 				011893351D1CCE2A00896164 /* YLMeTableViewController.m in Sources */,
+				F35405131D2606F1003910A9 /* ZYScrollView.m in Sources */,
 				011893311D1CCBD800896164 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,7 +687,9 @@
 			baseConfigurationReference = 6F2C5F88E58EEFD7A640D4B1 /* Pods-明星衣橱.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/明星衣橱/PrefixHeader.pch";
 				INFOPLIST_FILE = "明星衣橱/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BNR.----";
@@ -648,7 +702,9 @@
 			baseConfigurationReference = 2ED200F278F3E241139725CA /* Pods-明星衣橱.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/明星衣橱/PrefixHeader.pch";
 				INFOPLIST_FILE = "明星衣橱/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BNR.----";

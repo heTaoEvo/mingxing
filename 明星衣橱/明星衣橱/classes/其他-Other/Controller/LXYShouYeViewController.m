@@ -19,13 +19,19 @@
 #import <YYModel.h>
 #import "LXYShangPing.h"
 #import <UIKit+AFNetworking.h>
+#import <MJRefresh.h>
+#import "LXYfenlei.h"
+#import "LXYShangPingXiangQingViewController.h"
+#import "LXYXdata.h"
+#import "LXYDaoJiShi.h"
+
 
 @interface LXYShouYeViewController () <UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) NSArray *guoJia,*guoJiaTuPian;
 @property (nonatomic, strong) NSMutableArray *Pingpai,*sc,*items;
 @property (nonatomic ,retain) NSTimer *time;
 @property (nonatomic ,strong) LXYShangPing *shangping;
-
+@property (nonatomic ,strong) LXYfenlei *fenLei;
 @end
 
 @implementation LXYShouYeViewController
@@ -34,15 +40,28 @@
     [super viewDidLoad];
     self.guoJia = @[@"韩国馆",@"欧美馆",@"日本馆",@"中国馆",@"全球精选",@"精品美妆",];
     self.guoJiaTuPian = @[@"icon_korea",@"icon_america",@"icon_my_notice_num",@"icon_france",@"icon_Italy",@"icon_france",];
-    
+    self.items = [[NSMutableArray alloc]init];
     [self downloadPingPaiShuJu];
     [self downloadShangPingShuJu];
+    [self dnowloadFenLei];
     self.sc = [[NSMutableArray alloc]init];
     self.time=[NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(play) userInfo:nil repeats:YES];
    self.automaticallyAdjustsScrollViewInsets = NO;
     self.table.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     [[NSRunLoop currentRunLoop] addTimer:self.time forMode:UITrackingRunLoopMode];
-   
+    self.table.tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+    
+    self.table.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self downloadPingPaiShuJu];
+    }];
+   self.table.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+       [self downloadShangPingShuJu];
+       
+   }];
+    
+  
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -124,9 +143,9 @@
             if (brand.count>0) {
                 
                 
-                cell.SCroll2.contentSize = CGSizeMake((brand.count+2)*(320), 200);
+                cell.SCroll2.contentSize = CGSizeMake((brand.count+2)*(Screen_Width), 200);
                 cell.SCroll2.delegate = self;
-                cell.SCroll2.contentOffset = CGPointMake(320, 0);
+                cell.SCroll2.contentOffset = CGPointMake(Screen_Width, 0);
                 for (UIView *ui in cell.SCroll2.subviews) {
                     [ui removeFromSuperview];
                 }
@@ -139,7 +158,7 @@
                         NSURL *url = [NSURL URLWithString:brands[@"component"][@"picUrl"]];
                         
                         [iv sd_setImageWithURL:url  placeholderImage:[UIImage imageNamed:@"button_more"]];
-                        iv.frame = CGRectMake(320*i+320, 0, 320, 200);
+                        iv.frame = CGRectMake(Screen_Width*i+Screen_Width, 0, Screen_Width, 200);
                         [cell.SCroll2 addSubview:iv];
                     
                    
@@ -155,7 +174,7 @@
                 NSURL *url0 = [NSURL URLWithString:first[@"component"][@"picUrl"]];
                 
                 [iv0 sd_setImageWithURL:url0  placeholderImage:[UIImage imageNamed:@"button_more"]];
-                iv0.frame = CGRectMake(0, 0, 320, 200);
+                iv0.frame = CGRectMake(0, 0, Screen_Width, 200);
                 [cell.SCroll2 addSubview:iv0];
                 
                 //最后一张图
@@ -169,7 +188,7 @@
                 NSURL *url1 = [NSURL URLWithString:last[@"component"][@"picUrl"]];
                 
                 [iv1 sd_setImageWithURL:url1  placeholderImage:[UIImage imageNamed:@"button_more"]];
-                iv1.frame = CGRectMake((brand.count+1)*320, 0, 320, 200);
+                iv1.frame = CGRectMake((brand.count+1)*Screen_Width, 0, Screen_Width, 200);
                 [cell.SCroll2 addSubview:iv1];
                cell.SCroll2.tag=12345;
                 cell.SCroll2.ArrCount = brand.count;
@@ -212,6 +231,16 @@
                         NSString *title = brands[@"component"][@"title"];
                         NSString *price = brands[@"component"][@"price"];
                         NSString *origin_price = brands[@"component"][@"origin_price"];
+                        
+                        NSDictionary *action = brands[@"component"][@"action"];
+                        NSMutableDictionary *dic = [[NSMutableDictionary alloc]init];
+//                        dic.main_image = ;
+//                        dic.source_id = action[@"sourceId"];
+                        [dic setObject:action[@"main_image"] forKey:@"main_image"];
+                        [dic setObject:action[@"sourceId"] forKey:@"source_id"];
+                    
+                        iv.Xdata = dic;
+                        
                        
                         [iv setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
                         
@@ -221,10 +250,11 @@
                             [iv setTitle:title forState:UIControlStateNormal];
                             iv.oldPrice1 = origin_price;
                             iv.Price1 = price;
+
                         }];
                         iv.frame = CGRectMake(50*i, 0, 50, 300);
                         [cell.Scroll3 addSubview:iv];
-                        
+                        [iv addTarget:self action:@selector(SHANGPING:) forControlEvents:UIControlEventTouchUpInside];
                     }
                 }
             }
@@ -279,14 +309,14 @@
         cell2.rightView.guojia.text = rightcountry;
         [cell2.leftView.pic sd_setImageWithURL:lefturl placeholderImage:[UIImage imageNamed:@"button_more"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
             [cell2.leftView layoutIfNeeded];
-            NSLog(@"11122222222");
+         
           
         }];
-        NSLog(@"111111222%@",lefturl);
+     
         
         [cell2.rightView.pic sd_setImageWithURL:righturl placeholderImage:[UIImage imageNamed:@"button_more"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
             [cell2.rightView layoutIfNeeded];
-            NSLog(@"111222222");
+           
         }];
         
         
@@ -298,10 +328,7 @@
     return cell;
 }
 
-- (void)test
-{
-    NSLog(@"!!!");
-}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0) {
@@ -312,12 +339,75 @@
 }
 
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section == 1) {
+        return 50;
+    }
+    return 0;
+}
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    
+    if (section == 1) {
+        UIView *header = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44)];
+        header.backgroundColor = [UIColor whiteColor];
+        UIView *gundongTiao = [[UIView alloc]initWithFrame:CGRectMake(0, 44, [UIScreen mainScreen].bounds.size.width/4, 6)];
+         gundongTiao.backgroundColor = [UIColor redColor];
+        gundongTiao.tag = 1000000;
+        [header addSubview:gundongTiao];
+        
+        //创建btn
+        for (int i=0; i<4; i++) {
+            UIButton *fenlei = [[UIButton alloc]initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width/4*(i), 0, [UIScreen mainScreen].bounds.size.width/4, 44)];
+            NSDictionary * dic =self.fenLei.data.items[i];
+            fenlei.tag = i;
+            [fenlei setTitle:dic[@"nav_name"] forState:UIControlStateNormal];
+            [fenlei setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+            [fenlei setTitleColor:[UIColor colorWithRed:220/255.0 green:56/255.0 blue:122/255.0 alpha:1] forState:UIControlStateSelected];
+            [fenlei addTarget:self action:@selector(moveGunDong:) forControlEvents:UIControlEventTouchUpInside];
+            [header addSubview:fenlei];
+
+    }
+   
+    return header;
+        
+        
+    }
+    return nil;
+}
+
+
+- (void)moveGunDong:(UIButton *)fenlei
+{
+
+    
+    UIView *vi = [self.table viewWithTag:1000000];
+    [UIView animateWithDuration:0.5 animations:^{
+                vi.frame = CGRectMake(fenlei.frame.origin.x, 44-6, fenlei.frame.size.width, 6);
+            }];
+    
+    
+    
+}
+
 #pragma mark - 滚动的协议方法
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView;{
     if (scrollView.tag==12345) {
         [self.time setFireDate:[NSDate distantFuture]];
     }
     
+    
+}
+
+//测试
+
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
+{
+    
+ //
+ //  targetContentOffset = CGPointMake(10, 0);
     
 }
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate;
@@ -334,7 +424,7 @@
     if (scrollView.tag==12345) {
         UIPageControl *pg=[self.view viewWithTag:1234567890];
         
-        pg.currentPage=(scrollView.contentOffset.x)/320-1;
+        pg.currentPage=(scrollView.contentOffset.x)/Screen_Width-1;
     }
     
 }
@@ -343,7 +433,7 @@
     for (LXYshouYeScrollTableViewCell *cell in self.table.visibleCells) {
        
         if ([cell isMemberOfClass:[LXYshouYeScrollTableViewCell class]]) {
-           [cell.SCroll2 setContentOffset:CGPointMake(cell.SCroll2.contentOffset.x+320, 0) animated:YES];
+           [cell.SCroll2 setContentOffset:CGPointMake(cell.SCroll2.contentOffset.x+Screen_Width, 0) animated:YES];
            
         }
 
@@ -355,7 +445,7 @@
     if (scrollView.tag==12345) {
         UIPageControl *pg=[self.view viewWithTag:1234567890];
         
-        pg.currentPage=(scrollView.contentOffset.x)/320-1;
+        pg.currentPage=(scrollView.contentOffset.x)/Screen_Width-1;
     }
     
     
@@ -364,11 +454,11 @@
     if (scrollView.tag==12345) {
         LXYShouYePic *scroll = (LXYShouYePic *)scrollView;
         float a=scrollView.contentOffset.x;
-        if (a>=0&&a<320) {
-            scrollView.contentOffset=CGPointMake(a+320*(scroll.ArrCount), 0);
+        if (a>=0&&a<Screen_Width) {
+            scrollView.contentOffset=CGPointMake(a+Screen_Width*(scroll.ArrCount), 0);
         }
-        if (a>=320*(scroll.ArrCount+1)&&320*(scroll.ArrCount+2)) {
-            scrollView.contentOffset=CGPointMake(a-320*(scroll.ArrCount), 0);
+        if (a>=Screen_Width*(scroll.ArrCount+1)&&Screen_Width*(scroll.ArrCount+2)) {
+            scrollView.contentOffset=CGPointMake(a-Screen_Width*(scroll.ArrCount), 0);
         }
     }
     
@@ -396,7 +486,7 @@
           
           
             ;
-            
+            [self.table.mj_header endRefreshing];
         [self.table reloadData];
             
            
@@ -408,9 +498,14 @@
 }
 
 - (void)downloadShangPingShuJu
-{
-    
-    NSString *flag = nil;
+{   NSString *flag = nil;
+    if (self.shangping==nil) {
+        
+    }else
+    {
+        flag = self.shangping.data.flag;
+    }
+   
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     NSString *str = [NSString stringWithFormat:@"http://api-v2.mall.hichao.com/sku/list?more_items=1&type=selection&flag=%@&gc=appstore&gf=iphone&gn=mxyc_ip&gv=6.6.3&gi=F6094B15-6418-42A0-9FFD-4EB1F2139FEB&gs=640x1136&gos=10.0&access_token=",flag];
     [manager GET:str parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -418,9 +513,9 @@
         
         self.shangping = [LXYShangPing yy_modelWithDictionary:responseObject];
        
-        self.items = [NSMutableArray arrayWithArray:self.shangping.data.items];
-        
-        
+         [self.items addObjectsFromArray:self.shangping.data.items];
+   
+       [self.table.mj_footer endRefreshing];
         [self.table reloadData];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -428,6 +523,28 @@
     }];
 }
 
+- (void)dnowloadFenLei
+{
+     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:@"http://api-v2.mall.hichao.com/region/detail/goods-nav?region=0&gc=appstore&gf=iphone&gn=mxyc_ip&gv=6.6.3&gi=F6094B15-6418-42A0-9FFD-4EB1F2139FEB&gs=640x1136&gos=10.0&access_token=" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+      
+        self.fenLei = [LXYfenlei yy_modelWithDictionary:responseObject];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@",error);
+    }];
+}
+
+#pragma mark - 进入商品详情页
+- (void)SHANGPING:(LXYScrollBtn *)btn
+{
+ 
+    UIStoryboard *lxystory=[UIStoryboard storyboardWithName:@"LXY" bundle:nil];
+
+    LXYShangPingXiangQingViewController *xiangQiang = [lxystory instantiateViewControllerWithIdentifier:@"xiangqing"];
+    xiangQiang.dic = btn.Xdata;
+    [self.navigationController pushViewController:xiangQiang animated:YES];
+}
 /*
 #pragma mark - Navigation
 

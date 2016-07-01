@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  明星衣橱
+//
+//  Created by joker on 16/6/29.
+//  Copyright © 2016年 Evo. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIView+SDAutoLayout.h>
+#import <UITableView+SDAutoTableViewCellHeight.h>
+#import <AFNetworking.h>
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import <YYModel.h>
+#import <UIKit+AFNetworking.h>
+#import <MJRefresh.h>
+
+#define Screen_Height [UIScreen mainScreen].bounds.size.height
+#define Screen_Width [UIScreen mainScreen].bounds.size.width
+
+#endif /* PrefixHeader_pch */

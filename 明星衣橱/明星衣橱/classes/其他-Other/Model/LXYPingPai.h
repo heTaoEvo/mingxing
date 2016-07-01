@@ -25,6 +25,12 @@
 
 @property (nonatomic, copy) NSString *height;
 
+@property (nonatomic, copy) NSString *nav_cat_ids;
+
+@property (nonatomic, copy) NSString *cate_names;
+
+@property (nonatomic, copy) NSString *nav_name;
+
 @end
 //以上
 @interface Data : JSONModel
