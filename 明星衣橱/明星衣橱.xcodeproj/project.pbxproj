@@ -39,6 +39,7 @@
 		01D0C4F51D26562C00E04809 /* YLButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0C4F31D26562C00E04809 /* YLButtonTableViewCell.m */; };
 		01D0C4F61D26562C00E04809 /* YLButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01D0C4F41D26562C00E04809 /* YLButtonTableViewCell.xib */; };
 		01D0C4F91D26659E00E04809 /* YLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0C4F81D26659E00E04809 /* YLUser.m */; };
+		01D0C4FA1D26833000E04809 /* LXYScrollBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = F310DDCF1D22160C00317917 /* LXYScrollBtn.m */; };
 		6082571C6F7951FBD27E2379 /* libPods-明星衣橱.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B90B9EC175F98C834D9056 /* libPods-明星衣橱.a */; };
 		F30F8D3A1D1CC6FB0028D1D4 /* LXY.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30F8D381D1CC6FB0028D1D4 /* LXY.storyboard */; };
 		F30F8D3C1D1CC6FB0028D1D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30F8D3B1D1CC6FB0028D1D4 /* Assets.xcassets */; };
@@ -49,7 +50,6 @@
 		F30F8D5F1D1F6BFF0028D1D4 /* LXYshouYeScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F30F8D5E1D1F6BFF0028D1D4 /* LXYshouYeScrollTableViewCell.m */; };
 		F310DDC71D21249900317917 /* LXYPingPai.m in Sources */ = {isa = PBXBuildFile; fileRef = F310DDC61D21249900317917 /* LXYPingPai.m */; };
 		F310DDCD1D21720D00317917 /* LXYShouYePic.m in Sources */ = {isa = PBXBuildFile; fileRef = F310DDCC1D21720D00317917 /* LXYShouYePic.m */; };
-		F310DDD01D22160C00317917 /* LXYScrollBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = F310DDCF1D22160C00317917 /* LXYScrollBtn.m */; };
 		F310DDD61D22662500317917 /* LXYShangPing.m in Sources */ = {isa = PBXBuildFile; fileRef = F310DDD51D22662500317917 /* LXYShangPing.m */; };
 		F3149D411D235D73001B191C /* LXYfenlei.m in Sources */ = {isa = PBXBuildFile; fileRef = F3149D401D235D73001B191C /* LXYfenlei.m */; };
 		F3149D441D23A2D6001B191C /* LXYShangPingXiangQingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3149D431D23A2D6001B191C /* LXYShangPingXiangQingViewController.m */; };
@@ -618,7 +618,6 @@
 				F30F8D3C1D1CC6FB0028D1D4 /* Assets.xcassets in Resources */,
 				01D0C4F61D26562C00E04809 /* YLButtonTableViewCell.xib in Resources */,
 				F30F8D3A1D1CC6FB0028D1D4 /* LXY.storyboard in Resources */,
-<<<<<<< HEAD
 				01D0C4EC1D264B2300E04809 /* YLMatchDetailController.xib in Resources */,
 				01D0C4F11D264FD900E04809 /* YLScrollTableViewCell.xib in Resources */,
 				01B7072B1D24BF0800531075 /* YLSeminarTableViewCell.xib in Resources */,
@@ -627,10 +626,8 @@
 				01CC11F01D22A9D9007D9488 /* YLMatchViewController.xib in Resources */,
 				01B707361D2549EC00531075 /* YLMatchAndSeminarViewController.xib in Resources */,
 				01D0C4E71D26197A00E04809 /* YLSeminaryDetailController.xib in Resources */,
-=======
 				F354051B1D2654BB003910A9 /* LXYDaoJiShi.xib in Resources */,
 				F35404231D2500F8003910A9 /* LoadMoreView.xib in Resources */,
->>>>>>> 1b3daa7d131795a815ce42e609cb02dbe45d6a77
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,21 +686,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D0C4FA1D26833000E04809 /* LXYScrollBtn.m in Sources */,
 				F310DDD61D22662500317917 /* LXYShangPing.m in Sources */,
 				F35404221D2500F8003910A9 /* LoadMoreView.m in Sources */,
 				0118932F1D1CCBD800896164 /* AppDelegate.m in Sources */,
-<<<<<<< HEAD
 				01B7072A1D24BF0800531075 /* YLSeminarTableViewCell.m in Sources */,
-				F310DDD01D22160C00317917 /* LXYScrollBtn.m in Sources */,
 				01CC11EF1D22A9D9007D9488 /* YLMatchViewController.m in Sources */,
 				01CC12031D22AA37007D9488 /* UIImage+WebP.m in Sources */,
 				01CC11FA1D22AA04007D9488 /* YLWaterFlowCell.m in Sources */,
 				01D0C4EB1D264B2300E04809 /* YLMatchDetailController.m in Sources */,
-=======
 				F3149D441D23A2D6001B191C /* LXYShangPingXiangQingViewController.m in Sources */,
-				F310DDD01D22160C00317917 /* LXYScrollBtn.m in Sources */,
 				F3149D471D23AAAB001B191C /* LXYXdata.m in Sources */,
->>>>>>> 1b3daa7d131795a815ce42e609cb02dbe45d6a77
 				F3B73DA31D20DB6600B519AD /* LXYShouYeCollectionView.m in Sources */,
 				F30F8D521D1CD37C0028D1D4 /* LXYTabBarViewController.m in Sources */,
 				01D0C4F91D26659E00E04809 /* YLUser.m in Sources */,
@@ -728,12 +721,9 @@
 				F310DDC71D21249900317917 /* LXYPingPai.m in Sources */,
 				F3B73D9E1D20CBF100B519AD /* LXYcollectionTableViewCell.m in Sources */,
 				011893351D1CCE2A00896164 /* YLMeTableViewController.m in Sources */,
-<<<<<<< HEAD
 				01CC11FB1D22AA04007D9488 /* YLWaterFlowView.m in Sources */,
 				01D0C4E61D26197A00E04809 /* YLSeminaryDetailController.m in Sources */,
-=======
 				F35405131D2606F1003910A9 /* ZYScrollView.m in Sources */,
->>>>>>> 1b3daa7d131795a815ce42e609cb02dbe45d6a77
 				011893311D1CCBD800896164 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -845,18 +835,13 @@
 			baseConfigurationReference = 6F2C5F88E58EEFD7A640D4B1 /* Pods-明星衣橱.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-<<<<<<< HEAD
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/明星衣橱",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "明星衣橱/PrefixHeader.pch";
-=======
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/明星衣橱/PrefixHeader.pch";
->>>>>>> 1b3daa7d131795a815ce42e609cb02dbe45d6a77
 				INFOPLIST_FILE = "明星衣橱/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BNR.----";
@@ -869,18 +854,13 @@
 			baseConfigurationReference = 2ED200F278F3E241139725CA /* Pods-明星衣橱.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-<<<<<<< HEAD
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/明星衣橱",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "明星衣橱/PrefixHeader.pch";
-=======
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/明星衣橱/PrefixHeader.pch";
->>>>>>> 1b3daa7d131795a815ce42e609cb02dbe45d6a77
 				INFOPLIST_FILE = "明星衣橱/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BNR.----";

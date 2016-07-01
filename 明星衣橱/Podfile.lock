@@ -20,20 +20,17 @@ PODS:
   - MJRefresh (3.1.9)
   - SDAutoLayout (2.1.2)
   - SDCycleScrollView (1.65):
-  - SDWebImage (~> 3.7)
+    - SDWebImage (~> 3.7)
   - SDWebImage (3.8.1):
-  - SDWebImage/Core (= 3.8.1)
+    - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - JSONModel
-<<<<<<< HEAD
   - Masonry
   - MJExtension
-=======
->>>>>>> 1b3daa7d131795a815ce42e609cb02dbe45d6a77
   - MJRefresh
   - SDAutoLayout (~> 2.1.2)
   - SDCycleScrollView (~> 1.64)
@@ -43,21 +40,14 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
-<<<<<<< HEAD
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
-=======
->>>>>>> 1b3daa7d131795a815ce42e609cb02dbe45d6a77
   MJRefresh: c5f1f1653e5a1b932c90f78074f2bc86f3f9bd5e
   SDAutoLayout: 4910758003bbb043003700915b00f53fbc2bf512
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-<<<<<<< HEAD
-PODFILE CHECKSUM: 3ac907c9bbf1d51f89864107f4b1299ab9cc41de
-=======
-PODFILE CHECKSUM: 1cb269427d21f7586e3b4109cd8a923f59f52d4d
->>>>>>> 1b3daa7d131795a815ce42e609cb02dbe45d6a77
+PODFILE CHECKSUM: 1ada3572b78cf193648000816af0b9fe7a1bae26
 
 COCOAPODS: 1.0.0

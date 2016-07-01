@@ -72,7 +72,6 @@ The MIT License in plain English: http://www.touch-code-magazine.com/JSONModel/M
 		</dict>
 		<dict>
 			<key>FooterText</key>
-<<<<<<< HEAD
 			<string>Copyright (c) 2013-2015 MJExtension (https://github.com/CoderMJLee/MJExtension)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -100,8 +99,6 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-=======
->>>>>>> 1b3daa7d131795a815ce42e609cb02dbe45d6a77
 			<string>Copyright (c) 2013-2015 MJRefresh (https://github.com/CoderMJLee/MJRefresh)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -129,7 +126,6 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-<<<<<<< HEAD
 			<string>Copyright (c) 2011-2012 Masonry Team - https://github.com/Masonry
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -156,8 +152,6 @@ THE SOFTWARE.</string>
 		</dict>
 		<dict>
 			<key>FooterText</key>
-=======
->>>>>>> 1b3daa7d131795a815ce42e609cb02dbe45d6a77
 			<string>The MIT License (MIT)
 
 Copyright (c) 2015 GSD_iOS

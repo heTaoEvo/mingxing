@@ -51,7 +51,6 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 The MIT License in plain English: http://www.touch-code-magazine.com/JSONModel/MITLicense
 
 
-<<<<<<< HEAD
 ## MJExtension
 
 Copyright (c) 2013-2015 MJExtension (https://github.com/CoderMJLee/MJExtension)
@@ -75,8 +74,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-=======
->>>>>>> 1b3daa7d131795a815ce42e609cb02dbe45d6a77
 ## MJRefresh
 
 Copyright (c) 2013-2015 MJRefresh (https://github.com/CoderMJLee/MJRefresh)
@@ -100,7 +97,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-<<<<<<< HEAD
 ## Masonry
 
 Copyright (c) 2011-2012 Masonry Team - https://github.com/Masonry
@@ -123,8 +119,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-=======
->>>>>>> 1b3daa7d131795a815ce42e609cb02dbe45d6a77
 ## SDAutoLayout
 
 The MIT License (MIT)
