@@ -1,0 +1,22 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target '明星衣橱' do
+  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+	pod 'AFNetworking', '~> 3.0'
+	pod 'JSONModel'	
+	pod 'SDWebImage', '~>3.8'	
+	pod 'YYModel'
+	 pod 'SDAutoLayout', '~> 2.1.2'
+<<<<<<< HEAD
+     pod 'Masonry'
+     pod 'MJExtension'
+     pod 'MJRefresh'
+=======
+	pod 'SDCycleScrollView','~> 1.64'
+	pod 'MJRefresh'
+>>>>>>> 1b3daa7d131795a815ce42e609cb02dbe45d6a77
+  # Pods for 明星衣橱
+
+end
