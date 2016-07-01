@@ -11,6 +11,8 @@
 #import "LXYShouYeViewController.h"
 #import "YLMatchViewController.h"
 #import "YLMeTableViewController.h"
+#import "YLSeminarViewController.h"
+#import "YLMatchAndSeminarViewController.h"
 @interface LXYTabBarViewController ()
 
 @end
@@ -55,7 +57,7 @@
     
 
     //搭配视图控制器
-    UINavigationController *dapeiNavigationController = [[UINavigationController alloc] initWithRootViewController:[[YLMatchViewController alloc] init]];
+    UINavigationController *dapeiNavigationController = [[UINavigationController alloc] initWithRootViewController:[[YLMatchAndSeminarViewController alloc] init]];
     //社区视图控制器
     UINavigationController *bbsNavigationController = [[UINavigationController alloc]init];
     

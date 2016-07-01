@@ -11,6 +11,14 @@
 		011893301D1CCBD800896164 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 011893161D1CCBD800896164 /* main.m */; };
 		011893311D1CCBD800896164 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0118931A1D1CCBD800896164 /* ViewController.m */; };
 		011893351D1CCE2A00896164 /* YLMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011893331D1CCE2A00896164 /* YLMeTableViewController.m */; };
+		01B707251D24B49E00531075 /* YLSeminarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B707231D24B49E00531075 /* YLSeminarViewController.m */; };
+		01B707261D24B49E00531075 /* YLSeminarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B707241D24B49E00531075 /* YLSeminarViewController.xib */; };
+		01B7072A1D24BF0800531075 /* YLSeminarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B707281D24BF0800531075 /* YLSeminarTableViewCell.m */; };
+		01B7072B1D24BF0800531075 /* YLSeminarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B707291D24BF0800531075 /* YLSeminarTableViewCell.xib */; };
+		01B7072E1D24C7B100531075 /* UIView+YLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B7072D1D24C7B100531075 /* UIView+YLExtension.m */; };
+		01B707311D24CA6700531075 /* YLSeminary.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B707301D24CA6700531075 /* YLSeminary.m */; };
+		01B707351D2549EC00531075 /* YLMatchAndSeminarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B707331D2549EC00531075 /* YLMatchAndSeminarViewController.m */; };
+		01B707361D2549EC00531075 /* YLMatchAndSeminarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B707341D2549EC00531075 /* YLMatchAndSeminarViewController.xib */; };
 		01CC11EF1D22A9D9007D9488 /* YLMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC11ED1D22A9D9007D9488 /* YLMatchViewController.m */; };
 		01CC11F01D22A9D9007D9488 /* YLMatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CC11EE1D22A9D9007D9488 /* YLMatchViewController.xib */; };
 		01CC11F41D22A9FD007D9488 /* YLMatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC11F31D22A9FD007D9488 /* YLMatchModel.m */; };
@@ -20,6 +28,17 @@
 		01CC12031D22AA37007D9488 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC12001D22AA37007D9488 /* UIImage+WebP.m */; };
 		01CC12041D22AA37007D9488 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01CC12011D22AA37007D9488 /* WebP.framework */; };
 		01CC12051D22AA37007D9488 /* YL.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CC12021D22AA37007D9488 /* YL.storyboard */; };
+		01CC12081D22D521007D9488 /* YLMatchScrollButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC12071D22D521007D9488 /* YLMatchScrollButton.m */; };
+		01CC120B1D22E684007D9488 /* UIBarButtonItem+YLUIBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC120A1D22E684007D9488 /* UIBarButtonItem+YLUIBarButtonItem.m */; };
+		01D0C4E61D26197A00E04809 /* YLSeminaryDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0C4E41D26197A00E04809 /* YLSeminaryDetailController.m */; };
+		01D0C4E71D26197A00E04809 /* YLSeminaryDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01D0C4E51D26197A00E04809 /* YLSeminaryDetailController.xib */; };
+		01D0C4EB1D264B2300E04809 /* YLMatchDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0C4E91D264B2300E04809 /* YLMatchDetailController.m */; };
+		01D0C4EC1D264B2300E04809 /* YLMatchDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01D0C4EA1D264B2300E04809 /* YLMatchDetailController.xib */; };
+		01D0C4F01D264FD900E04809 /* YLScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0C4EE1D264FD900E04809 /* YLScrollTableViewCell.m */; };
+		01D0C4F11D264FD900E04809 /* YLScrollTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01D0C4EF1D264FD900E04809 /* YLScrollTableViewCell.xib */; };
+		01D0C4F51D26562C00E04809 /* YLButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0C4F31D26562C00E04809 /* YLButtonTableViewCell.m */; };
+		01D0C4F61D26562C00E04809 /* YLButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01D0C4F41D26562C00E04809 /* YLButtonTableViewCell.xib */; };
+		01D0C4F91D26659E00E04809 /* YLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0C4F81D26659E00E04809 /* YLUser.m */; };
 		6082571C6F7951FBD27E2379 /* libPods-明星衣橱.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B90B9EC175F98C834D9056 /* libPods-明星衣橱.a */; };
 		F30F8D3A1D1CC6FB0028D1D4 /* LXY.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30F8D381D1CC6FB0028D1D4 /* LXY.storyboard */; };
 		F30F8D3C1D1CC6FB0028D1D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30F8D3B1D1CC6FB0028D1D4 /* Assets.xcassets */; };
@@ -45,6 +64,19 @@
 		0118931A1D1CCBD800896164 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		011893321D1CCE2A00896164 /* YLMeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMeTableViewController.h; sourceTree = "<group>"; };
 		011893331D1CCE2A00896164 /* YLMeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMeTableViewController.m; sourceTree = "<group>"; };
+		01B707221D24B49E00531075 /* YLSeminarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSeminarViewController.h; sourceTree = "<group>"; };
+		01B707231D24B49E00531075 /* YLSeminarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSeminarViewController.m; sourceTree = "<group>"; };
+		01B707241D24B49E00531075 /* YLSeminarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLSeminarViewController.xib; sourceTree = "<group>"; };
+		01B707271D24BF0800531075 /* YLSeminarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSeminarTableViewCell.h; sourceTree = "<group>"; };
+		01B707281D24BF0800531075 /* YLSeminarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSeminarTableViewCell.m; sourceTree = "<group>"; };
+		01B707291D24BF0800531075 /* YLSeminarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLSeminarTableViewCell.xib; sourceTree = "<group>"; };
+		01B7072C1D24C7B100531075 /* UIView+YLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YLExtension.h"; sourceTree = "<group>"; };
+		01B7072D1D24C7B100531075 /* UIView+YLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YLExtension.m"; sourceTree = "<group>"; };
+		01B7072F1D24CA6700531075 /* YLSeminary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSeminary.h; sourceTree = "<group>"; };
+		01B707301D24CA6700531075 /* YLSeminary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSeminary.m; sourceTree = "<group>"; };
+		01B707321D2549EC00531075 /* YLMatchAndSeminarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMatchAndSeminarViewController.h; sourceTree = "<group>"; };
+		01B707331D2549EC00531075 /* YLMatchAndSeminarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMatchAndSeminarViewController.m; sourceTree = "<group>"; };
+		01B707341D2549EC00531075 /* YLMatchAndSeminarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLMatchAndSeminarViewController.xib; sourceTree = "<group>"; };
 		01CC11EC1D22A9D9007D9488 /* YLMatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMatchViewController.h; sourceTree = "<group>"; };
 		01CC11ED1D22A9D9007D9488 /* YLMatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMatchViewController.m; sourceTree = "<group>"; };
 		01CC11EE1D22A9D9007D9488 /* YLMatchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLMatchViewController.xib; sourceTree = "<group>"; };
@@ -60,6 +92,24 @@
 		01CC12001D22AA37007D9488 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
 		01CC12011D22AA37007D9488 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 		01CC12021D22AA37007D9488 /* YL.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YL.storyboard; sourceTree = "<group>"; };
+		01CC12061D22D521007D9488 /* YLMatchScrollButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMatchScrollButton.h; sourceTree = "<group>"; };
+		01CC12071D22D521007D9488 /* YLMatchScrollButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMatchScrollButton.m; sourceTree = "<group>"; };
+		01CC12091D22E684007D9488 /* UIBarButtonItem+YLUIBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+YLUIBarButtonItem.h"; sourceTree = "<group>"; };
+		01CC120A1D22E684007D9488 /* UIBarButtonItem+YLUIBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+YLUIBarButtonItem.m"; sourceTree = "<group>"; };
+		01D0C4E31D26197A00E04809 /* YLSeminaryDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSeminaryDetailController.h; sourceTree = "<group>"; };
+		01D0C4E41D26197A00E04809 /* YLSeminaryDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSeminaryDetailController.m; sourceTree = "<group>"; };
+		01D0C4E51D26197A00E04809 /* YLSeminaryDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLSeminaryDetailController.xib; sourceTree = "<group>"; };
+		01D0C4E81D264B2300E04809 /* YLMatchDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMatchDetailController.h; sourceTree = "<group>"; };
+		01D0C4E91D264B2300E04809 /* YLMatchDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMatchDetailController.m; sourceTree = "<group>"; };
+		01D0C4EA1D264B2300E04809 /* YLMatchDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLMatchDetailController.xib; sourceTree = "<group>"; };
+		01D0C4ED1D264FD900E04809 /* YLScrollTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLScrollTableViewCell.h; sourceTree = "<group>"; };
+		01D0C4EE1D264FD900E04809 /* YLScrollTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLScrollTableViewCell.m; sourceTree = "<group>"; };
+		01D0C4EF1D264FD900E04809 /* YLScrollTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLScrollTableViewCell.xib; sourceTree = "<group>"; };
+		01D0C4F21D26562C00E04809 /* YLButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLButtonTableViewCell.h; sourceTree = "<group>"; };
+		01D0C4F31D26562C00E04809 /* YLButtonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLButtonTableViewCell.m; sourceTree = "<group>"; };
+		01D0C4F41D26562C00E04809 /* YLButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLButtonTableViewCell.xib; sourceTree = "<group>"; };
+		01D0C4F71D26659E00E04809 /* YLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLUser.h; sourceTree = "<group>"; };
+		01D0C4F81D26659E00E04809 /* YLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLUser.m; sourceTree = "<group>"; };
 		2ED200F278F3E241139725CA /* Pods-明星衣橱.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-明星衣橱.release.xcconfig"; path = "Pods/Target Support Files/Pods-明星衣橱/Pods-明星衣橱.release.xcconfig"; sourceTree = "<group>"; };
 		36B90B9EC175F98C834D9056 /* libPods-明星衣橱.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-明星衣橱.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2C5F88E58EEFD7A640D4B1 /* Pods-明星衣橱.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-明星衣橱.debug.xcconfig"; path = "Pods/Target Support Files/Pods-明星衣橱/Pods-明星衣橱.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +171,10 @@
 		011893121D1CCBD800896164 /* 其他-Other */ = {
 			isa = PBXGroup;
 			children = (
+				01B7072C1D24C7B100531075 /* UIView+YLExtension.h */,
+				01B7072D1D24C7B100531075 /* UIView+YLExtension.m */,
+				01CC12091D22E684007D9488 /* UIBarButtonItem+YLUIBarButtonItem.h */,
+				01CC120A1D22E684007D9488 /* UIBarButtonItem+YLUIBarButtonItem.m */,
 				011893131D1CCBD800896164 /* AppDelegate.h */,
 				011893141D1CCBD800896164 /* AppDelegate.m */,
 				011893151D1CCBD800896164 /* Controller */,
@@ -308,6 +362,18 @@
 				01CC11EC1D22A9D9007D9488 /* YLMatchViewController.h */,
 				01CC11ED1D22A9D9007D9488 /* YLMatchViewController.m */,
 				01CC11EE1D22A9D9007D9488 /* YLMatchViewController.xib */,
+				01B707221D24B49E00531075 /* YLSeminarViewController.h */,
+				01B707231D24B49E00531075 /* YLSeminarViewController.m */,
+				01B707241D24B49E00531075 /* YLSeminarViewController.xib */,
+				01B707321D2549EC00531075 /* YLMatchAndSeminarViewController.h */,
+				01B707331D2549EC00531075 /* YLMatchAndSeminarViewController.m */,
+				01B707341D2549EC00531075 /* YLMatchAndSeminarViewController.xib */,
+				01D0C4E31D26197A00E04809 /* YLSeminaryDetailController.h */,
+				01D0C4E41D26197A00E04809 /* YLSeminaryDetailController.m */,
+				01D0C4E51D26197A00E04809 /* YLSeminaryDetailController.xib */,
+				01D0C4E81D264B2300E04809 /* YLMatchDetailController.h */,
+				01D0C4E91D264B2300E04809 /* YLMatchDetailController.m */,
+				01D0C4EA1D264B2300E04809 /* YLMatchDetailController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -317,6 +383,10 @@
 			children = (
 				01CC11F21D22A9FD007D9488 /* YLMatchModel.h */,
 				01CC11F31D22A9FD007D9488 /* YLMatchModel.m */,
+				01B7072F1D24CA6700531075 /* YLSeminary.h */,
+				01B707301D24CA6700531075 /* YLSeminary.m */,
+				01D0C4F71D26659E00E04809 /* YLUser.h */,
+				01D0C4F81D26659E00E04809 /* YLUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -328,6 +398,17 @@
 				01CC11F71D22AA04007D9488 /* YLWaterFlowCell.m */,
 				01CC11F81D22AA04007D9488 /* YLWaterFlowView.h */,
 				01CC11F91D22AA04007D9488 /* YLWaterFlowView.m */,
+				01CC12061D22D521007D9488 /* YLMatchScrollButton.h */,
+				01CC12071D22D521007D9488 /* YLMatchScrollButton.m */,
+				01B707271D24BF0800531075 /* YLSeminarTableViewCell.h */,
+				01B707281D24BF0800531075 /* YLSeminarTableViewCell.m */,
+				01B707291D24BF0800531075 /* YLSeminarTableViewCell.xib */,
+				01D0C4ED1D264FD900E04809 /* YLScrollTableViewCell.h */,
+				01D0C4EE1D264FD900E04809 /* YLScrollTableViewCell.m */,
+				01D0C4EF1D264FD900E04809 /* YLScrollTableViewCell.xib */,
+				01D0C4F21D26562C00E04809 /* YLButtonTableViewCell.h */,
+				01D0C4F31D26562C00E04809 /* YLButtonTableViewCell.m */,
+				01D0C4F41D26562C00E04809 /* YLButtonTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -491,9 +572,16 @@
 			files = (
 				F30F8D3F1D1CC6FB0028D1D4 /* LaunchScreen.storyboard in Resources */,
 				F30F8D3C1D1CC6FB0028D1D4 /* Assets.xcassets in Resources */,
+				01D0C4F61D26562C00E04809 /* YLButtonTableViewCell.xib in Resources */,
 				F30F8D3A1D1CC6FB0028D1D4 /* LXY.storyboard in Resources */,
+				01D0C4EC1D264B2300E04809 /* YLMatchDetailController.xib in Resources */,
+				01D0C4F11D264FD900E04809 /* YLScrollTableViewCell.xib in Resources */,
+				01B7072B1D24BF0800531075 /* YLSeminarTableViewCell.xib in Resources */,
+				01B707261D24B49E00531075 /* YLSeminarViewController.xib in Resources */,
 				01CC12051D22AA37007D9488 /* YL.storyboard in Resources */,
 				01CC11F01D22A9D9007D9488 /* YLMatchViewController.xib in Resources */,
+				01B707361D2549EC00531075 /* YLMatchAndSeminarViewController.xib in Resources */,
+				01D0C4E71D26197A00E04809 /* YLSeminaryDetailController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,24 +642,36 @@
 			files = (
 				F310DDD61D22662500317917 /* LXYShangPing.m in Sources */,
 				0118932F1D1CCBD800896164 /* AppDelegate.m in Sources */,
+				01B7072A1D24BF0800531075 /* YLSeminarTableViewCell.m in Sources */,
 				F310DDD01D22160C00317917 /* LXYScrollBtn.m in Sources */,
 				01CC11EF1D22A9D9007D9488 /* YLMatchViewController.m in Sources */,
 				01CC12031D22AA37007D9488 /* UIImage+WebP.m in Sources */,
 				01CC11FA1D22AA04007D9488 /* YLWaterFlowCell.m in Sources */,
+				01D0C4EB1D264B2300E04809 /* YLMatchDetailController.m in Sources */,
 				F3B73DA31D20DB6600B519AD /* LXYShouYeCollectionView.m in Sources */,
 				F30F8D521D1CD37C0028D1D4 /* LXYTabBarViewController.m in Sources */,
+				01D0C4F91D26659E00E04809 /* YLUser.m in Sources */,
 				F30F8D571D1D13770028D1D4 /* LXYshouYeNaviBarButton.m in Sources */,
 				F316B6C81D20BB000014BACD /* YLImgButton.m in Sources */,
 				F30F8D5A1D1D2EEA0028D1D4 /* LXYShouYeViewController.m in Sources */,
+				01CC120B1D22E684007D9488 /* UIBarButtonItem+YLUIBarButtonItem.m in Sources */,
+				01CC12081D22D521007D9488 /* YLMatchScrollButton.m in Sources */,
 				011893301D1CCBD800896164 /* main.m in Sources */,
+				01B7072E1D24C7B100531075 /* UIView+YLExtension.m in Sources */,
 				01CC11FD1D22AA2B007D9488 /* Foundation+Log.m in Sources */,
+				01B707351D2549EC00531075 /* YLMatchAndSeminarViewController.m in Sources */,
+				01B707251D24B49E00531075 /* YLSeminarViewController.m in Sources */,
 				01CC11F41D22A9FD007D9488 /* YLMatchModel.m in Sources */,
+				01B707311D24CA6700531075 /* YLSeminary.m in Sources */,
+				01D0C4F51D26562C00E04809 /* YLButtonTableViewCell.m in Sources */,
 				F30F8D5F1D1F6BFF0028D1D4 /* LXYshouYeScrollTableViewCell.m in Sources */,
 				F310DDCD1D21720D00317917 /* LXYShouYePic.m in Sources */,
+				01D0C4F01D264FD900E04809 /* YLScrollTableViewCell.m in Sources */,
 				F310DDC71D21249900317917 /* LXYPingPai.m in Sources */,
 				F3B73D9E1D20CBF100B519AD /* LXYcollectionTableViewCell.m in Sources */,
 				011893351D1CCE2A00896164 /* YLMeTableViewController.m in Sources */,
 				01CC11FB1D22AA04007D9488 /* YLWaterFlowView.m in Sources */,
+				01D0C4E61D26197A00E04809 /* YLSeminaryDetailController.m in Sources */,
 				011893311D1CCBD800896164 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

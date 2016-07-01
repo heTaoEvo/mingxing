@@ -51,6 +51,7 @@
     CGSize titleSize = self.titleLabel.frame.size;
     
     CGSize imageSize = [self imageForState:UIControlStateNormal].size;
+    
     if (imageSize.width != 0 && imageSize.height != 0) {
         CGFloat imageViewCenterY = CGRectGetHeight(self.frame) - 3 - titleSize.height - imageSize.height / 2 - 5;
         self.imageView.center = CGPointMake(CGRectGetWidth(self.frame) / 2, imageViewCenterY);

@@ -11,6 +11,7 @@
 @interface YLMatchModel : NSObject
 @property (nonatomic,copy) NSString *picUrl;
 @property (nonatomic,copy) NSString *description;
+@property (nonatomic,copy) NSString *id;
 @property (nonatomic,copy) NSString *itemsCount;
 
 @end

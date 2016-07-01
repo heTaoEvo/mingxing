@@ -9,6 +9,7 @@
 #import "YLWaterFlowView.h"
 
 #import "YLWaterFlowCell.h"
+#import "YLWaterFlowCell.h"
 
 @interface YLWaterFlowView()
 
@@ -34,7 +35,6 @@
 
 /*
  优化的思路
- 
  1. 只显示屏幕范围内的单元格(OK)
  2. 建立缓存，保存移除屏幕的单元格=》移出屏幕的单元格就是可重用的
  3. 如果屏幕上已经存在的视图，不需要再去重建！
@@ -45,8 +45,6 @@
 - (void)setFrame:(CGRect)frame
 {
     [super setFrame:frame];
-    
-   
     //刷新数据
     [self reloadData];
 }
@@ -145,13 +143,10 @@
 {
     /*
      0. 预设：缓冲池已经存在，并且工作正常！
-     
      1. 去缓冲池查找是否有可重用的单元格
      2. 如果有？需要将单元格从缓冲池中删除
      */
-    
     YLWaterFlowCell *cell = [self.reusableCellSet anyObject];
-    
     // 如果找到可重用单元格，将其从缓冲池中删除
     // 单元格添加到视图中的工作，有layoutSubviews完成
     if (cell) {
@@ -171,7 +166,6 @@
     if (self.numberOfCells == 0) {
         return;
     }
-    
     // 后面再做真正的数据处理
     [self resetView];
     
@@ -218,7 +212,6 @@
     {
         [self.reusableCellSet removeAllObjects];
     }
-    
     // 4. 屏幕上得视图字典
     if (self.screenCellsDict == nil)
     {
@@ -229,14 +222,27 @@
         [self.screenCellsDict removeAllObjects];
     }
 }
-
+#pragma mark ----计算高度
+- (CGFloat)waterFlowView:(YLWaterFlowView *)waterFlowView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    YLWaterFlowCell *cell = [self.dataSource waterFlowView:self cellForRowAtIndexPath:indexPath];
+    UIImage *image = cell.imageView.image;
+        NSInteger column = [self.dataSource numberOfColumnsInWaterFlowView:waterFlowView];
+        CGFloat colWidth = waterFlowView.bounds.size.width / column;
+    
+        // 计算图像的高度
+        // 例如：h = 275 w = 200 目前的宽度是 320 / 3 = 106.667
+    float newHeigth = image.size.height / image.size.width * colWidth;
+    float labHeight = cell.textLabel.frame.size.height;
+//    YLLog(@"%f",labHeight);
+//    YLLog(@"%@",cell.textLabel);
+        return newHeigth+labHeight+arc4random()%20+20;
+}
 #pragma mark - 布局视图
 // 根据视图属性或数据源方法，生成瀑布流视图界面
 - (void)resetView
 {
     //生成一些必要的数据容器
     [self generateCacheData];
-    
     // 2. 布局界面
     // 1) 计算每列宽度
     //获取列数 重写get方法 在get方法中 使用数据源方法获取列数
@@ -248,21 +254,17 @@
     {
         currentY[i] = 0.0;
     }
-    
     /*
      在resetView方法中，最需要做的两件事情
      * 确定每一个单元格的位置
-     
      可以使用一个数组记录住所有单元格的位置
      然后在layoutSubviews方法中，重新计算所有子视图的位置即可。
-     
      * 确定contentSize以保证用户滚动的流畅
      */
-    
     NSInteger col = 0;
     for (NSIndexPath *indexPath in self.indexPaths) {
-        // 获取单元格的高度
-        CGFloat h = [self.delegate waterFlowView:self heightForRowAtIndexPath:indexPath];
+        // 获取单元格的高度self.delegate
+        CGFloat h = [self waterFlowView:self heightForRowAtIndexPath:indexPath];
         // X
         CGFloat x = col * colW;
         // Y

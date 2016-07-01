@@ -11,6 +11,7 @@ target '明星衣橱' do
 	 pod 'SDAutoLayout', '~> 2.1.2'
      pod 'Masonry'
      pod 'MJExtension'
+     pod 'MJRefresh'
   # Pods for 明星衣橱
 
 end

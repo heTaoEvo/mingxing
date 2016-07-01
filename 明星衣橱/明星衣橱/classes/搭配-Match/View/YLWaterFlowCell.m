@@ -16,15 +16,12 @@
 @implementation YLWaterFlowCell
 - (void)setMatchModel:(YLMatchModel *)matchModel {
     _matchModel = matchModel;
-    
-    YLLog(@"%@",matchModel.picUrl);
     NSArray *arr = [matchModel.picUrl componentsSeparatedByString:@"?"];
-    
-    
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:arr[0]] placeholderImage:[UIImage imageNamed:@"AppIcon40x40"]];
-    YLLog(@"%@------%@",self.imageView,self.imageView.image);
+
+    self.textLabel.text = self.matchModel.description;
     
-    self.textLabel.text = self.matchModel.description;    
+    
 }
 
 #pragma mark 实例化视图
@@ -35,8 +32,6 @@
     if (self) {
         // 使用属性记录可重用标示符
         self.reuseIdentifier = reuseIdentifier;
-        
-        [self setBackgroundColor:[UIColor colorWithRed:arc4random()%256/255.0 green:arc4random()%256/255.0 blue:arc4random()%256/255.0 alpha:1]];
     }
     
     return self;
@@ -50,13 +45,10 @@
     // 懒加载imageView
     if (_imageView == nil) {
         _imageView = [[UIImageView alloc]init];
-        
         // 保证图像按比例显示
         //[_imageView setContentMode:UIViewContentModeScaleAspectFit];
-        
         [self addSubview:_imageView];
     }
-    
     return _imageView;
 }
 
@@ -73,7 +65,7 @@
         [_textLabel setTextAlignment:NSTextAlignmentCenter];
         
         // 3) 设置文本自动换行
-        [_textLabel setNumberOfLines:0];
+        [_textLabel setNumberOfLines:1];
         
         // 4) 设置文字颜色
         [_textLabel setTextColor:[UIColor whiteColor]];
@@ -111,7 +103,7 @@
     if (h > self.bounds.size.height / 2.0) {
         h = self.bounds.size.height / 2.0;
     }
-    CGFloat y = self.bounds.size.height - h - kWaterFlowCellMargin;
+    //CGFloat y = self.bounds.size.height - h - kWaterFlowCellMargin;
     
     //[self.textLabel setFrame:CGRectMake(kWaterFlowCellMargin, y, w, h)];
     [self.textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -120,7 +112,7 @@
         make.width.mas_equalTo(self.imageView);
         make.height.mas_equalTo(h);
     }];
-    
+    [self.textLabel layoutIfNeeded];
     
 }
 
